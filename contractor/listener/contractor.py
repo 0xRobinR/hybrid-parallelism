@@ -1,8 +1,8 @@
-import config
+from contractor.config import MIN_WORKERS, MAX_WORKERS
 
 
 class Contractor:
-    def __init__(self, min_workers=config.MIN_WORKERS, max_workers=config.MAX_WORKERS):
+    def __init__(self, min_workers=MIN_WORKERS, max_workers=MAX_WORKERS):
         self.workers = []
         self.min_workers = min_workers
         self.max_workers = max_workers
