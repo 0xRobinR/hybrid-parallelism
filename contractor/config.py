@@ -8,9 +8,9 @@ MAX_WORKERS = 10
 
 os.environ['TF_CONFIG'] = json.dumps({
     'cluster': {
-        'worker': ["localhost:12345", "localhost:23456"]
+        'worker': ["192.168.0.144:12345", "192.168.0.171:23456"]
     },
-    'task': {'type': 'worker', 'index': 0}
+    'task': {'type': 'worker', 'index': 1}
 })
 
 
